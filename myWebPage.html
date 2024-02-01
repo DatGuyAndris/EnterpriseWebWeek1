@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <title>Price Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<div>
+<div >
   <h1>How much to charge?</h1>
-  <p>If you were a freelance web designer, how much should you charge for a website? Fill out the form and find out!</p>
+  <p>If you were a freelance web designer, how much should you charge for a website? </p> <br>
+  <img src="thonk.jpg" width="15%" height="15%">
+    <p>Fill out the form and find out!</p>
 </div>
 
-<div>
+<div class="main">
   <form id="budget" action="javascript:calculatePrice()">
     <label for="salary">What annual salary seems suitable for you?</label>
     <input type="text" id="salary" name="salary"/><br><br>
@@ -32,7 +35,7 @@
     let finalPrice = 0;
     dailyRate = s/365;
     finalPrice = dailyRate * d;
-    document.getElementById("finalPrice").innerHTML = finalPrice;
+    document.getElementById("finalPrice").innerHTML = "Final Price: " + finalPrice;
   }
   </script>
 
